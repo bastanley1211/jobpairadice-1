@@ -36,44 +36,92 @@ table {
   border-spacing: 0;
 }
 
-@media (max-width: 320px) {
-  .top-promo {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding: 1em;
-    background-color: #F2F1F8;
-  }
-  .top-promo .promotion {
-    text-align: center;
-    font-style: italic;
-    line-height: 1.25em;
-  }
-  .top-promo .social {
-    display: none;
-  }
+.hd-wrapper, .main-wrapper {
+  padding: 0;
+}
 
-  .facebook {
-    text-decoration: none;
-  }
+.top-promo {
+  background-color: #D82830;
+  padding: 1em;
+  text-align: center;
+  font-style: italic;
+  color: yellow;
+  font-weight: bold;
+  font-size: 1.15em;
+}
 
-  .site-logo {
-    width: 100%;
-  }
-  .site-logo img {
-    width: 100%;
-  }
+.logo-avail {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 1em;
+}
 
-  .navigation {
-    text-align: center;
-    background-color: #F7666D;
-  }
-  .navigation .nav-item {
-    padding: 0.5em;
-    font-weight: bold;
-  }
-  .navigation .nav-item .nav-link {
-    text-decoration: none;
-    color: white;
-  }
+.site-logo {
+  min-width: 350px;
+  max-width: 500px;
+}
+.site-logo img {
+  width: 100%;
+}
+
+.availability, .hours {
+  padding-top: 2em;
+}
+
+.hours {
+  padding-right: 3em;
+}
+
+.navbar {
+  padding-left: 4.5em;
+  background-color: #D82830 !important;
+}
+.navbar a {
+  font-weight: bold;
+  color: white !important;
+}
+
+.bg-image {
+  background-image: url("/images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.services {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 3em;
+}
+.services .card {
+  border-radius: 10px;
+}
+.services .card-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #D82830;
+}
+.services .card-text {
+  padding-bottom: 1.5em;
+  padding-top: 1em;
+  line-height: 1.5;
+}
+.services .btn {
+  background-color: #D82830;
+  font-weight: bold;
+}
+
+.mid-background {
+  height: 50px;
+  background-color: #D82830;
+  margin-top: 2em;
+}
+
+.aboutus {
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
 }

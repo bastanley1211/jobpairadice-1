@@ -1,63 +1,121 @@
-@import "mixins", "defaults";
-@media (max-width:  320px)
+@import "defaults", "mixins";
+
+// Header content
+.hd-wrapper, .main-wrapper
 {
-    // Promotional area
-    .top-promo
-    {
-        display: flex;
-        flex-flow:  row wrap;
-        justify-content:  space-between;
-        padding:  1em;
-        background-color:  #F2F1F8;
-
-        .promotion
-        {
-            text-align: center;
-            font-style: italic;
-            line-height:  1.25em;
-        }
-
-        .social
-        {
-            display: none;
-        }
-    }
-
-   .facebook
-    {
-        text-decoration: none;
-    }
-
-    // Image and availability
-    
-        .site-logo
-        {
-            width:  100%;
-
-            img
-            {
-                width:  100%;
-            }
-        }
-
-    // Navigation
-    .navigation
-    {
-        text-align: center;
-        background-color:  #F7666D;
-
-    .nav-item
-    {
-        padding:  0.50em;
-        font-weight: bold;
-        
-        .nav-link
-        {
-            text-decoration: none;
-            color:  white;
-        }
-    }
-    }
-
+    padding:  0;
 }
 
+.top-promo
+{
+    background-color:  #D82830;
+    padding:  1em;
+    text-align: center;
+    font-style: italic;
+    color:  yellow;
+    font-weight:  bold;
+    font-size:  1.15em;
+}
+
+// Hours and availability
+.logo-avail
+{
+    display:  flex;
+    flex-flow:  row wrap;
+    justify-content:  space-between;
+    padding-top:  1em;
+}
+
+.site-logo
+{
+    min-width:  350px;
+    max-width:  500px;
+
+    img
+    {
+        width:  100%;
+    }
+}
+
+.availability, .hours
+{
+    padding-top:  2em;
+}
+
+.hours
+{
+    padding-right:  3em;
+}
+
+// Navigation
+.navbar
+{
+    padding-left:  4.5em;
+    background-color:  #D82830 !important;
+
+    a
+    {
+        font-weight:  bold;
+        color:  white !important;
+    }
+}
+
+// Main content
+
+.bg-image
+{
+    background-image: url("/images/hero-bg.jpg");
+    background-repeat:  no-repeat;
+    background-size: cover;
+    height:  500px;    
+}
+
+.services
+{
+    display:  flex;
+    flex-flow:  row wrap;
+    justify-content:  space-around;
+    margin-top:  3em;
+
+    .card
+    {
+        border-radius:  10px;
+    }
+
+    .card-title
+    {
+        font-weight:  bold;
+        font-size:  1.50em;
+        color:  #D82830;
+    }
+
+    .card-text
+    {
+        padding-bottom:  1.50em;
+        padding-top:  1em;
+        line-height:  1.50;
+
+    }
+
+    .btn
+    {
+        background-color:  #D82830;
+        font-weight:  bold;
+    }
+}
+
+.mid-background
+{
+    height:  50px;
+    background-color:  #D82830;
+    margin-top:  2em;
+}
+
+// About Us section
+.aboutus
+{
+    margin-top:  2em;
+    font-size: 2em;
+    font-weight:  bold;
+    text-align: center;
+}
