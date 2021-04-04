@@ -10360,6 +10360,14 @@ fieldset:disabled .btn {
   font-weight: bold;
 }
 
+.services-title {
+  margin-top: 2em;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #D82830;
+}
+
 .mid-background {
   height: 50px;
   background-color: #D82830;
@@ -10373,9 +10381,11 @@ fieldset:disabled .btn {
 
 .aboutus {
   margin-top: 2em;
+  margin-bottom: 2em;
   font-size: 2em;
   font-weight: bold;
   text-align: center;
+  color: #D82830;
 }
 
 .accordion {
@@ -10387,4 +10397,11 @@ fieldset:disabled .btn {
   background-color: #D82830;
   color: white;
   font-weight: bold;
+}
+
+.contact-section {
+  border: 2px solid gray;
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }

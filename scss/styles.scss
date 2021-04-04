@@ -105,6 +105,15 @@
     }
 }
 
+.services-title
+{
+    margin-top:  2em;
+    text-align: center;
+    font-size:  2em;
+    font-weight:  bold;
+    color: #D82830;
+}
+
 .mid-background
 {
     height:  50px;
@@ -122,9 +131,11 @@
 .aboutus
 {
     margin-top:  2em;
+    margin-bottom: 2em;
     font-size: 2em;
     font-weight:  bold;
     text-align: center;
+    color: #D82830;
 }
 
 
@@ -140,5 +151,13 @@
     background-color: #D82830;
     color:  white;
     font-weight:  bold;   
+}
+
+.contact-section
+{
+    border:  2px solid gray;
+    padding:  1em;
+    margin-top:  2em;
+    margin-bottom:  2em;
 }
 
