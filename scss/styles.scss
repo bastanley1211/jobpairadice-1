@@ -1,4 +1,5 @@
 @import "defaults", "mixins";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Header content
 .hd-wrapper, .main-wrapper
@@ -112,6 +113,12 @@
 }
 
 // About Us section
+.about-section
+{
+    padding:  0;
+    width:  75%;
+}
+
 .aboutus
 {
     margin-top:  2em;
@@ -119,3 +126,19 @@
     font-weight:  bold;
     text-align: center;
 }
+
+
+// Accordion
+.accordion
+{
+    margin-left:  0;
+    margin-right:  0;
+}
+
+.accordion-button
+{
+    background-color: #D82830;
+    color:  white;
+    font-weight:  bold;   
+}
+
