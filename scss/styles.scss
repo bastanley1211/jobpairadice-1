@@ -161,3 +161,40 @@
     margin-bottom:  2em;
 }
 
+// Form
+.contact-form
+{
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #d9d9d9,
+                -20px -20px 60px #ffffff;
+    width:  75%;
+    height:  500px;
+    padding:  2em;
+    margin-right:  auto;
+    margin-left:  auto;
+    margin-bottom:  4em;
+
+    input, select, textarea
+    {
+        margin-bottom:  1.50em;
+    }
+
+    input:active, select:active, textarea:active
+    {
+        border-color:  #D82830 !important;
+    }
+}
+
+.contact-title
+{
+    @extend .aboutus;
+}
+
+// Footer content
+.foot-wrapper
+{
+    @extend .mid-background;
+    margin-top:  2em;
+
+}

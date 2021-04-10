@@ -10368,7 +10368,7 @@ fieldset:disabled .btn {
   color: #D82830;
 }
 
-.mid-background {
+.mid-background, .foot-wrapper {
   height: 50px;
   background-color: #D82830;
   margin-top: 2em;
@@ -10379,7 +10379,7 @@ fieldset:disabled .btn {
   width: 75%;
 }
 
-.aboutus {
+.aboutus, .contact-title {
   margin-top: 2em;
   margin-bottom: 2em;
   font-size: 2em;
@@ -10404,4 +10404,28 @@ fieldset:disabled .btn {
   padding: 1em;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+.contact-form {
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  width: 75%;
+  height: 500px;
+  padding: 2em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 4em;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+  margin-bottom: 1.50em;
+}
+
+.contact-form input:active, .contact-form select:active, .contact-form textarea:active {
+  border-color: #D82830 !important;
+}
+
+.foot-wrapper {
+  margin-top: 2em;
 }
