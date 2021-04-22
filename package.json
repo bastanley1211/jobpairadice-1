@@ -1,0 +1,26 @@
+{
+  "name": "jobpairadice",
+  "version": "1.0.0",
+  "description": "Business project for Nucamp bootcamp",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xsmith702/jobpairadice.git"
+  },
+  "author": "Xavier Smith and Bethany Stanley",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1"
+  },
+  "bugs": {
+    "url": "https://github.com/xsmith702/jobpairadice/issues"
+  },
+  "homepage": "https://github.com/xsmith702/jobpairadice#readme"
+}
