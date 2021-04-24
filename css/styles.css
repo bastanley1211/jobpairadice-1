@@ -3006,7 +3006,7 @@ fieldset:disabled .btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
+  background-color: rgb(139, 82, 94);
   border-color: rgb(139, 82, 94);
 }
 
@@ -10675,7 +10675,7 @@ fieldset:disabled .btn {
   font-style: italic;
   color: yellow;
   font-weight: bold;
-  font-size: 1.15em;
+  font-size: 1em;
 }
 
 .logo-avail {
@@ -10692,11 +10692,6 @@ fieldset:disabled .btn {
 
 .site-logo img {
   width: 100%;
-}
-
-.availability,
-.hours {
-  padding-top: 2em;
 }
 
 .hours {
@@ -10720,7 +10715,6 @@ fieldset:disabled .btn {
   flex-flow: row wrap;
   justify-content: center;
   column-gap: 15px;
-  margin-top: 3em;
   background: rgba(141, 141, 141, 0.25);
   padding: 40px 0px;
 }
@@ -10746,8 +10740,9 @@ fieldset:disabled .btn {
   font-weight: bold;
 }
 
-.services-title {
+.section-title {
   margin-top: 2em;
+  margin-bottom: 2em;
   text-align: center;
   font-size: 2em;
   font-weight: bold;
@@ -10834,6 +10829,16 @@ h2 {
 
 .site-footer {
   background-color: rgb(139, 82, 94);
+}
+
+.site-footer a {
+  color: rgba(225, 225, 225, 0.8);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
 }
 
 .nav-btn {
