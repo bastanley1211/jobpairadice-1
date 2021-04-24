@@ -3030,8 +3030,8 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0a58ca;
-  border-color: #0a53be;
+  background-color: rgba(139, 82, 94, 0.5);
+  border-color: rgba(139, 82, 94, 0.5);
 }
 
 .btn-check:checked + .btn-primary:focus,
@@ -3045,8 +3045,8 @@ fieldset:disabled .btn {
 .btn-primary:disabled,
 .btn-primary.disabled {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: rgba(139, 82, 94, 0.5);
+  border-color: rgba(139, 82, 94, 0.5);
 }
 
 .btn-secondary {
@@ -4669,6 +4669,8 @@ fieldset:disabled .btn {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .card > hr {
@@ -5305,9 +5307,9 @@ fieldset:disabled .btn {
   position: relative;
   display: block;
   padding: 0.5rem 1rem;
-  color: #212529;
+  color: white;
   text-decoration: none;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -10845,6 +10847,21 @@ h2 {
   border: 1px solid rgb(139, 82, 94);
 }
 
+.nav-btn:active {
+  background-color: rgba(139, 82, 94, 0.5);
+  border-color: rgba(139, 82, 94, 0.5);
+}
+.nav-btn a:active {
+  background-color: rgba(139, 82, 94, 0.5);
+  border-color: rgba(139, 82, 94, 0.5);
+}
+.nav-btn a:focus {
+  color: #fff;
+  background-color: rgba(139, 82, 94, 0.5);
+  border-color: rgba(139, 82, 94, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(139, 82, 94, 0.5);
+}
+
 .signUpButton a:hover {
   color: black;
 }
@@ -10863,6 +10880,28 @@ h2 {
 
 #topLogo {
   max-width: 250px;
+}
+
+#tierone {
+  background: rgba(0, 0, 0, 0.03);
+  color: black !important;
+}
+
+#tierone li {
+  color: black;
+}
+
+#tiertwo {
+  background: rgb(139, 82, 94);
+  color: white !important;
+}
+
+#tierthree {
+  background: rgba(11, 172, 204, 0.5);
+}
+
+#tierthree li {
+  color: black !important;
 }
 
 @media screen and (max-width: 522px) {

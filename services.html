@@ -27,7 +27,7 @@
         <section class="container-fluid">
             <div class="row">
                 <div class="col-12 d-md-none pt-2">
-                    <img src="images/classylogo.png" class="img-fluid" height="200px" />
+                    <a href="index.html"><img src="images/classylogo.png" class="img-fluid" height="200px" /></a>
                 </div>
             </div>
         </section>
@@ -36,144 +36,218 @@
         <section class="navigation">
             <nav class="navbar navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand d-none d-md-block" href="#"><img src="images/classylogo.svg" id="topLogo"
-                            class="img-fluid my-auto pt-4" alt="Job Pair-a-dice site logo"></a>
+                    <a class="navbar-brand d-none d-md-block" href="index.html"><img src="images/classylogo.png"
+                            id="topLogo" class="img-fluid my-auto pt-4" alt="Job Pair-a-dice site logo"></a>
                     <span class="navbar-text ml-auto">
-                        <a class="btn nav-btn" role="button" id="loginButton">
+                        <a class="btn nav-btn btn-primary text-light mr-1" role="button" id="signUpButton">
+                            Sign Up
+                        </a>
+                        <a class="btn nav-btn mr-1" role="button" id="loginButton">
                             Login
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav text-center">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="about.html">About Us</a>
-                                </li>
-                            </ul>
-                        </div>
+                    </span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav text-right">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </section>
     </header>
 
+    <!--Login Modal-->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button class="btn nav-btn mr-auto text-dark mr-1">Sign Up</button>
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary btn-sm ml-1">Log In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Main section -->
     <main class="main-wrapper container-fluid">
-        <!-- About Us section -->
-        <section class="container-fluid about-section">
-            <h2 class="aboutus">Services</h2>
-            <div class="row">
-                <div class="col text-center">
-                    <img src="images/employer-image.jpg" class="img-fluid w-50" />
+        <h2 class="section-title">Services & Pricing</h2>
+        <div class="bg-image"></div>
+        <!--Pricing Tiers-->
+        <div class="row mx-4">
+            <h2 class="section-title mt-3 mb-3">Pricing</h2>
+            <div class="col">
+                <div class="card" id="tierone" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tier One</h5>
+                        <p class="card-text">
+                        <ul class="list-group-flush m-0 p-0">
+                            <li class="list-group-item">Get access to our portal and app.</li>
+                            <li class="list-group-item">Track up to 5 application per month.</li>
+                            <li class="list-group-item">Check out our job search resource library.</li>
+                        </ul><br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" id="tiertwo" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tier Two</h5>
+                        <p class="card-text">
+                        <ul class="list-group-flush m-0 p-0">
+                            <li class="list-group-item">All the perks on Tier 1 but with unlimited applications</li>
+                            <li class="list-group-item">Get access to our job concierge services</li>
+                            <li class="list-group-item">Have access to our interview prep resource guides</li>
+                        </ul>
+                        <br><br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" id="tierthree" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tier Three</h5>
+                        <p class="card-text">
+                        <ul class="list-group-flush m-0 p-0">
+                            <li class="list-group-item">All the perks of the first two tiers</li>
+                            <li class="list-group-item">One-on-one job prep with one of our experts!</li>
+                            <li class="list-group-item">Access to our employer database</li>
+                        </ul>
+                        <br><br></p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Facts accordion -->
-            <div class=" accordion accordion-flush mb-5" id="accordionFlushExample">
-                <div class="accordion-item mt-4">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Experienced HR Professionals
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">The average HR experience level of our team is 10 years. This means
-                            you'll
-                            receive <strong>relevant</strong> and <strong>accurate</strong> support, support designed to
-                            help
-                            you
-                            manage the job-search process effectively. We set up a system that removes all the dross
-                            from the
-                            job
-                            search and allows you to focus on landing that dream job. If there's a pitfall out there,
-                            we've
-                            tried
-                            to
-                            counter it with our system and experience.</div>
+            <!-- Services cards -->
+            <h2 class="section-title mb-3">Services</h2>
+            <section class="services container-fluid">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/concierge-image.jpg" class="card-img-top" alt="job concierge picture">
+                    <div class="card-body">
+                        <h5 class="card-title">Job Concierge</h5>
+                        <p class="card-text">Looking for a new job but don't have the time to look yourself. We can help
+                            by
+                            taking
+                            over the job-search process for you. Click below to find out more.<br><br></p>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Customer Service Excellence
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the
-                            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
-                            this
-                            being
-                            filled with some actual content.
-                        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/application-image.jpg" class="card-img-top" alt="application image">
+                    <div class="card-body">
+                        <h5 class="card-title">App Management</h5>
+                        <p class="card-text">Tracking your job applications like above? Check out our
+                            application-management
+                            system,
+                            which lets you focus on finding work. Choose us today!<br><br></p>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Diversity and Openness
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the
-                            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                            exciting
-                            happening here in terms of content, but just filling up the space to make it look, at least
-                            at first
-                            glance, a bit more representative of how this would look in a real-world application.
-                        </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/interview-image.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Interview Management</h5>
+                        <p class="card-text">Need help with your interview and all the stuff that goes with it? Take a
+                            look
+                            at our
+                            interview and document management system and make your life easier.</p>
                     </div>
                 </div>
-            </div>
-        </section>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/employer-image.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Employer Database</h5>
+                        <p class="card-text">Want to know more about the companies you're applying for
+                            <strong>before</strong> you
+                            send in your application? Check out our employer database.<br><br>
+                        </p>
+                    </div>
+                </div>
+            </section>
     </main>
 
     <!-- Footer -->
-    <footer class="site-footer container-fluid px-0 mx-0">
+    <footer class="site-footer container-fluid px-0 mx-0 py-3 text-light">
         <div class="row my-auto">
-            <div class="col pt-3">
-                <ul class="footer-nav text-center">
+            <div class="col pt-3 text-center">
+                <h5>Company</h5>
+                <ul class="footer-nav mx-0 px-0 mt-3">
                     <li><a class="text-light active" href="index.html">Home</a></li>
                     <li><a class="text-light" href="about.html">About Us</a></li>
-                    <li><a class="text-light" href="#">Contact Us</a></li>
+                    <li><a class="text-light" href="index.html/#contactsection">Contact Us</a></li>
                     <li><a class="text-light" href="#">Services</a></li>
                     <li><a class="text-light" href="#">Customer Portal</a></li>
                 </ul>
 
             </div>
-            <div class="col pt-3">
-                <ul class="footer-nav text-center">
-                    <li><a class="text-light active" href="#">Link</a></li>
-                    <li><a class="text-light" href="#">Link</a></li>
-                    <li><a class="text-light" href="#">Link</a></li>
-                    <li><a class="text-light" href="#">Link</a></li>
-                    <li><a class="text-light" href="#">Link</a></li>
-                </ul>
+            <!--Footer social links icons-->
+            <div class="col pt-3 text-center">
+                <h5>Social</h5>
+                <a class="btn btn-social-icon btn-instagram text-light" href="http://instagram.com/">
+                    <i class="fa fa-instagram"> </i></a>
+                <a class="btn btn-social-icon btn-facebook text-light" href="http://facebook.com/">
+                    <i class="fa fa-facebook"> </i></a>
+                <a class="btn btn-social-icon btn-twitter text-light" href="http://twitter.com/">
+                    <i class="fa fa-twitter"> </i></a>
+                <a class="btn btn-social-icon btn-google text-light" href="http://youtube.com/">
+                    <i class="fa fa-youtube"> </i></a><br /><br /><br /><br />
+                <p class="">&copy; Job Pair-A-Dice 2021</p>
             </div>
-            <div class="col pt-3">
-                <ul class="footer-nav text-center">
-                    <li><a class="text-light active" href="#">Link</a></li>
-                    <li><a class="text-light" href="#">Link</a></li>
-                    <li><a class="text-light" href="#">Link</a></li>
-                    <li><a class="text-light" href="#">Link</a></li>
-                    <li><a class="text-light" href="#">Link</a></li>
-                </ul>
+            <!--Footer contact info-->
+            <div class="col pt-3 text-center">
+                <h5>Contact Us</h5>
+                <p><i class="fa fa-check"> </i> Mon-Sat<br />
+                    6a-5p Pacific Standard Time</p>
+                <h6>Text or Call</h6>
+                <a role=" button" class="btn btn-link" href="tel:+18885551515"><i class="fa fa-phone"></i>
+                    1-800-888-1515</a><br />
+                <h6>Email Us</h6>
+                <a role="button" class="btn btn-link" href="mailto:info@jobspairadice.com"><i
+                        class="fa fa-envelope-o"></i>
+                    info@jobspairadice.com</a><br />
             </div>
         </div>
 
